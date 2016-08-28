@@ -18,7 +18,48 @@
     <!-- Latest compiled JavaScript -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body onload="pop_up()">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">×</span>
+            <h2>Welcome To My Customized Portfolio</h2>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="sel1">1. Select Required Position (hold shift to select more than one):</label>
+                    <select multiple class="form-control" id="sel1">
+                        <option>Front End Developer</option>
+                        <option>Web Developer</option>
+                        <option>Cloud Developer</option>
+                        <option>Java Developer</option>
+                        <option>Machine Learning</option>
+                    </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="sel2">2. Select Required Technologies (hold shift to select more than one):</label>
+                    <select multiple class="form-control" id="sel2">
+                        <option>Angular 2</option>
+                        <option>NodeJS</option>
+                        <option>ReactJS</option>
+                        <option>AWS</option>
+                        <option>JavaScript</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <h3>Please provide the information to view the related work</h3>
+        </div>
+    </div>
+
+</div>
 
 <!--  BODY PAGE CONTENT -->
 <!-- navigation panel -->
@@ -32,17 +73,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Your Brand Name</a>
+            <a class="navbar-brand" href="#">Abhilash Shrivastava</a>
         </div>
 
         <div class="collapse navbar-collapse" id="navbar-collapse-main">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#information">Information</a></li>
-                <li><a href="#google_map">Contact</a></li>
-                <li><a href="https://www.script-tutorials.com/bootstrap-one-page-template-with-parallax-effect/">Back to tutorial</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#information">Software Skills</a></li>
+                <li><a href="#google_map">Achievements and Certificate</a></li>
+                <li><a href="#google_map">Academic</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -51,9 +92,7 @@
 <!-- first section - Home -->
 <div id="home" class="home">
     <div class="text-vcenter">
-        <h1>Hello World</h1>
-        <h3>This is bootstrap-based layout</h3>
-        <a href="#about" class="btn btn-default btn-lg">Continue</a>
+        <h1 id="slider">Welcome!</h1>
     </div>
 </div>
 <!-- /first section -->
@@ -64,11 +103,14 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <img src="images/logo.png" alt="" />
+                <img src="https://assets.entrepreneur.com/content/16x9/822/tips-hiring-great-web-developer.jpg" alt="" />
             </div>
             <div class="col-sm-6 text-center">
-                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet.</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum metus et ligula venenatis, at rhoncus nisi molestie. Pellentesque porttitor elit suscipit massa laoreet metus.</p>
+                <h2>Front End Web Developer</h2>
+                <p class="lead">I am looking for a full-time opportunity starting from December 2016.</p>
+                <p class="lead">I have mainly worked on the technologies related to front end development and Cloud Computing such as Angular 2, React, NodeJS, JavaScript, cloud foundry, GE Predix, . </p>
+                <p class="lead">I also have 3.5 years of work experience in Tata Consultancy Services  that includes work related to cloud computing, database management, Java application development. Technologies, I have worked on during my work experience mainly include Java, SQL, virtualization.</p>
+                <p class="lead">I am more interested to work on a profile which combined both the cloud computing and front end development work.</p>
             </div>
         </div>
     </div>
@@ -78,27 +120,42 @@
 <!-- third section - Services -->
 <div id="services" class="pad-section">
     <div class="container">
-        <h2 class="text-center">Our Services</h2> <hr />
+        <h2 class="text-center">Projects</h2> <hr />
         <div class="row text-center">
             <div class="col-sm-3 col-xs-6">
+                <i class="glyphicon glyphicon-envelope"> </i>
+                <h4>Meet-the-Need</h4>
+                <p>Location based courier service web application uses MEAN (MongoDB , ExpressJS, Angular 2, NodeJS) & NPM.</p>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <i class="glyphicon glyphicon-phone"> </i>
+                <h4>iSplit</h4>
+                <p>A restaurant bill splitting web application developed on Node.JS using npm,  ReactJS and Redux.</p>
+            </div>
+            <div class="col-sm-3 col-xs-6">
                 <i class="glyphicon glyphicon-cloud"> </i>
-                <h4>Service 1</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
+                <h4>Smart Watering System</h4>
+                <p>An automated watering system developed on Predix(GE) platform using AngularJS, Polymer, nginx, Grunt.</p>
             </div>
             <div class="col-sm-3 col-xs-6">
-                <i class="glyphicon glyphicon-leaf"> </i>
-                <h4>Service 2</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
+                <i class="glyphicon glyphicon-plane"> </i>
+                <h4>Bttleships Game</h4>
+                <p>Multi player game development on Ruby on Rails using JavaScript, Redis and Pusher in REST architecture design.</p>
             </div>
             <div class="col-sm-3 col-xs-6">
-                <i class="glyphicon glyphicon-phone-alt"> </i>
-                <h4>Service 3</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
+                <i class="glyphicon glyphicon-phone"> </i>
+                <h4>Recipe by Ingredients</h4>
+                <p>An Android App development in AGILE and SCRUM software methodology using Java and Android.</p>
             </div>
             <div class="col-sm-3 col-xs-6">
-                <i class="glyphicon glyphicon-bullhorn"> </i>
-                <h4>Service 4</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
+                <i class="glyphicon glyphicon-phone"> </i>
+                <h4>Micro posts</h4>
+                <p>Implemented multiuser micro blogging site using Ruby on Rails.</p>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <i class="glyphicon glyphicon-globe"> </i>
+                <h4>Web Server</h4>
+                <p>HTTP Web server implementation using Ruby in Test Driven Development following Apache architecture.</p>
             </div>
         </div>
     </div>
@@ -109,23 +166,183 @@
 <div id="information" class="pad-section">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-2">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h2 class="panel-title">Additional information</h2>
+                        <h2 class="panel-title">JavaScript</h2>
                     </div>
-                    <div class="panel-body lead">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet.
+                    <div class="huge-chartbox">
+                    <div id="javascript" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;95&quot;,&quot;#19C5F5&quot;],  &quot;1&quot;:[&quot;95&quot;,&quot;5&quot;,&quot;#ecebeb&quot;] }" data-chart-text="95%" data-chart-caption="Expert Level" data-chart-initial-rotate="180"></div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-2">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h2 class="panel-title">Additional information</h2>
+                        <h2 class="panel-title">HTML5</h2>
                     </div>
-                    <div class="panel-body lead">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet.
+                    <div class="huge-chartbox">
+                        <div id="html" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;95&quot;,&quot;#0000ff&quot;],  &quot;1&quot;:[&quot;95&quot;,&quot;5&quot;,&quot;#ecebeb&quot;] }" data-chart-text="95%" data-chart-caption="Expert Level" data-chart-initial-rotate="180"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">CSS3</h2>
+                    </div>
+                    <div class="huge-chartbox">
+                        <div id="css" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;95&quot;,&quot;#ffff00&quot;],  &quot;1&quot;:[&quot;95&quot;,&quot;5&quot;,&quot;#ecebeb&quot;] }" data-chart-text="95%" data-chart-caption="Expert Level" data-chart-initial-rotate="180"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Rest API</h2>
+                    </div>
+                    <div class="huge-chartbox">
+                        <div id="restapi" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;95&quot;,&quot;#BA55D3&quot;],  &quot;1&quot;:[&quot;95&quot;,&quot;5&quot;,&quot;#ecebeb&quot;] }" data-chart-text="95%" data-chart-caption="Expert Level" data-chart-initial-rotate="180"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">JSON</h2>
+                    </div>
+                    <div class="huge-chartbox">
+                        <div id="json" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;95&quot;,&quot;#780000&quot;],  &quot;1&quot;:[&quot;95&quot;,&quot;5&quot;,&quot;#ecebeb&quot;] }" data-chart-text="95%" data-chart-caption="Expert Level" data-chart-initial-rotate="180"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Git/Github</h2>
+                    </div>
+                    <div class="huge-chartbox">
+                        <div id="git" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;95&quot;,&quot;#009933&quot;],  &quot;1&quot;:[&quot;95&quot;,&quot;5&quot;,&quot;#ecebeb&quot;] }" data-chart-text="95%" data-chart-caption="Expert Level" data-chart-initial-rotate="180"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Java</h2>
+                    </div>
+                    <div class="huge-chartbox">
+                        <div id="java" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;90&quot;,&quot;#FF00CC&quot;],  &quot;1&quot;:[&quot;90&quot;,&quot;10&quot;,&quot;#ecebeb&quot;] }" data-chart-text="90%" data-chart-caption="Expert Level" data-chart-initial-rotate="180"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Ruby on Rails</h2>
+                    </div>
+                    <div class="huge-chartbox">
+                        <div id="ror" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;90&quot;,&quot;#D2691E&quot;],  &quot;1&quot;:[&quot;90&quot;,&quot;10&quot;,&quot;#ecebeb&quot;] }" data-chart-text="90%" data-chart-caption="Expert Level" data-chart-initial-rotate="180"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">ExpressJS</h2>
+                    </div>
+                    <div class="huge-chartbox">
+                        <div id="expressjs" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;90&quot;,&quot;#66FFCC&quot;],  &quot;1&quot;:[&quot;90&quot;,&quot;10&quot;,&quot;#ecebeb&quot;] }" data-chart-text="90%" data-chart-caption="Expert Level" data-chart-initial-rotate="180"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Angular 2</h2>
+                    </div>
+                    <div class="huge-chartbox">
+                        <div id="angular2" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;85&quot;,&quot;#ff0000&quot;],  &quot;1&quot;:[&quot;85&quot;,&quot;15&quot;,&quot;#ecebeb&quot;] }" data-chart-text="85%" data-chart-caption="Expert Level" data-chart-initial-rotate="180"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">NodeJS</h2>
+                    </div>
+                    <div class="huge-chartbox">
+                        <div id="nodejs" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;85&quot;,&quot;#00ff00&quot;],  &quot;1&quot;:[&quot;85&quot;,&quot;15&quot;,&quot;#ecebeb&quot;] }" data-chart-text="85%" data-chart-caption="Expert Level" data-chart-initial-rotate="180"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">NPM</h2>
+                    </div>
+                    <div class="huge-chartbox">
+                        <div id="npm" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;85&quot;,&quot;#008000&quot;],  &quot;1&quot;:[&quot;85&quot;,&quot;15&quot;,&quot;#ecebeb&quot;] }" data-chart-text="85%" data-chart-caption="Expert Level" data-chart-initial-rotate="180"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Bootstrap</h2>
+                    </div>
+                    <div class="huge-chartbox">
+                        <div id="bootstrap" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;85&quot;,&quot;#4B0082&quot;],  &quot;1&quot;:[&quot;85&quot;,&quot;15&quot;,&quot;#ecebeb&quot;] }" data-chart-text="85%" data-chart-caption="Expert Level" data-chart-initial-rotate="180"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">jQuery</h2>
+                    </div>
+                    <div class="huge-chartbox">
+                        <div id="jquery" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;85&quot;,&quot;#7CFC00&quot;],  &quot;1&quot;:[&quot;85&quot;,&quot;15&quot;,&quot;#ecebeb&quot;] }" data-chart-text="85%" data-chart-caption="Expert Level" data-chart-initial-rotate="180"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">ReactJS</h2>
+                    </div>
+                    <div class="huge-chartbox">
+                        <div id="reactjs" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;80&quot;,&quot;#8B0000&quot;],  &quot;1&quot;:[&quot;80&quot;,&quot;20&quot;,&quot;#ecebeb&quot;] }" data-chart-text="80%" data-chart-caption="Expert Level" data-chart-initial-rotate="180"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">AWS</h2>
+                    </div>
+                    <div class="huge-chartbox">
+                        <div id="aws" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;80&quot;,&quot;#FF8C00&quot;],  &quot;1&quot;:[&quot;80&quot;,&quot;20&quot;,&quot;#ecebeb&quot;] }" data-chart-text="80%" data-chart-caption="Expert Level" data-chart-initial-rotate="180"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Predix(GE Digital)</h2>
+                    </div>
+                    <div class="huge-chartbox">
+                        <div id="predix" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;80&quot;,&quot;#000000&quot;],  &quot;1&quot;:[&quot;80&quot;,&quot;20&quot;,&quot;#ecebeb&quot;] }" data-chart-text="80%" data-chart-caption="Expert Level" data-chart-initial-rotate="180"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">MongoDB</h2>
+                    </div>
+                    <div class="huge-chartbox">
+                        <div id="mongodb" chart-type="donut" data-chart-max="100" data-chart-segments="{ &quot;0&quot;:[&quot;0&quot;,&quot;80&quot;,&quot;#CCCC00&quot;],  &quot;1&quot;:[&quot;80&quot;,&quot;20&quot;,&quot;#ecebeb&quot;] }" data-chart-text="80%" data-chart-caption="Expert Level" data-chart-initial-rotate="180"></div>
                     </div>
                 </div>
             </div>
