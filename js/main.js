@@ -1,23 +1,6 @@
 /**
  * Created by Abhi on 8/23/16.
  */
-$(document).ready(function (){
-
-  // create a LatLng object containing the coordinate for the center of the map
-  var latlng = new google.maps.LatLng(-33.86455, 151.209);
-
-  // prepare the map properties
-  var options = {
-    zoom: 15,
-    center: latlng,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    navigationControl: true,
-    mapTypeControl: false,
-    scrollwheel: false,
-    disableDoubleClickZoom: true
-  };
-
-});
 
 
 // Get the modal

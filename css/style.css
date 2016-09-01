@@ -187,10 +187,10 @@ footer .glyphicon:hover {
 
 @-webkit-keyframes slidetounlock {
     0% {
-        background-position: -100px 0;
+        background-position: -300px 0;
     }
     100%{
-        background-position: 100px 0;
+        background-position: 300px 0;
     }
 }
 
