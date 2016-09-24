@@ -1,12 +1,19 @@
 sudo: false
 language: java
 jdk:
-  - oraclejdk8
+- oraclejdk8
 script: echo "No test please"
 addons:
   ssh_known_hosts:
-    - ec2-52-88-156-243.us-west-2.compute.amazonaws.com
-    - 52.88.156.243
+  - ec2-52-88-156-243.us-west-2.compute.amazonaws.com
+  - 52.88.156.243
+before_install:
+- openssl aes-256-cbc -K $encrypted_57fc94437be5_key -iv $encrypted_57fc94437be5_iv
+  -in website_Public_Key.txt.enc -out ~\/Desktop/website_Public_Key.txt -d
+before_deploy:
+  - eval "$(ssh-agent -s)"
+  - chmod 600 $TRAVIS_BUILD_DIR/website_Public_Key.txt.enc
+  - ssh-add $TRAVIS_BUILD_DIR/website_Public_Key.txt.enc
 deploy:
   skip_cleanup: true
   provider: script
