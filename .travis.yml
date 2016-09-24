@@ -1,11 +1,6 @@
-language: node_js
-node_js:
-  - "6"
-  - "6.1"
-  - "5.11"
-  - "0.6"
-  - "iojs"
+language: none
 deploy:
+  skip_cleanup: true
   provider: codedeploy
   access_key_id: AKIAJS5NSPWZBLCWS64A
   secret_access_key:
