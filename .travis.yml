@@ -9,11 +9,11 @@ addons:
   - 52.88.156.243
 before_install:
 - openssl aes-256-cbc -K $encrypted_57fc94437be5_key -iv $encrypted_57fc94437be5_iv
-  -in website_Public_Key.txt.enc -out ~\/Desktop/website_Public_Key.txt -d
+  -in website_Public_Key.txt.enc -out website_Public_Key.txt -d
 before_deploy:
   - eval "$(ssh-agent -s)"
-  - chmod 600 $TRAVIS_BUILD_DIR/website_Public_Key.txt.enc
-  - ssh-add $TRAVIS_BUILD_DIR/website_Public_Key.txt.enc
+  - chmod 600 $TRAVIS_BUILD_DIR/website_Public_Key.txt
+  - ssh-add $TRAVIS_BUILD_DIR/website_Public_Key.txt
 deploy:
   skip_cleanup: true
   provider: script
