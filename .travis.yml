@@ -9,9 +9,6 @@ deploy:
   access_key_id: AKIAJS5NSPWZBLCWS64A
   secret_access_key:
     secure: CYwpd7HC8i27o/DYcQuZePDEeH/+UhBVjxRgbLUhKnAS+hb2uNs04QqikeId+Yoja83OJHyvf8ZgRp61uIzW2IhphEtTLNEiQJzCZV2i5hXWmNQj2tzYyBEPCY5/E6mDDnSQDKTpt9q7tyHR2nKsgledt/ZoCGDwqd3Rn3z0ijXe9uChYJN4tIX4XrBjFOwIF/hEHLj4K4QmZMTpPG+MvtjzU+lioFtyYpq3/EGaBHkqE9jo2xSiScefKbu5PFhFsfPQ85CLWR1vBr/nzJURX76M4bcLZD6wzqvL+Vp92OBVIGUkWT7FtawmPc8E+1jcVcGAAN757Hai41kMG93PtEZBrqOMsXEXPRTmyRxFcjJB8k/s64qoL54YGV50yhQHpbUxZf0uR3O9a+y29juxYkrgqTthhnLA6vE81fZfLMS0be55FPYAPWZ3A7QbCcpK6m2IdRFLjgU+IMRV+CYVoFxtGQo4kXvjtShUOC1qCDWpBQLFHH6GxM4RgmvSMsQGGvrdo4l7fsuMEyEBPWFzGGZkwVAUvZ0PchDy6Z2sG1nUySMUVgx9kf8VxJ5HMjYyMerNyvnpPa7K9sBxAw+ilQQBrj7KsnPY7VH7XVC8lbW83wZ5Y1B1c/11JMPY3gleGEIWUAdLkthp7dqrmiGf+wcEPuMqmX0B4ocbk2StPJA=
-  bucket: ''
-  key: ''
-  bundle_type: ''
   application: Website
   deployment_group: ''
   on:
