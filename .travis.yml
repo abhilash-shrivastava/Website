@@ -1,4 +1,4 @@
-language: none
+language: c
 deploy:
   skip_cleanup: true
   provider: codedeploy
