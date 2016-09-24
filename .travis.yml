@@ -14,4 +14,3 @@ deploy:
     repo: abhilash-shrivastava/Website
     all_branches: true
   script: sh deploy.sh
-  test: none
