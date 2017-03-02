@@ -1,311 +1,64 @@
-/* ==============================================================================================
-This copyright notice must be kept untouched in the stylesheet at all times.
-The original version of this stylesheet and the associated (x)html
-is available at http://www.script-tutorials.com/bootstrap-one-page-template-with-parallax-effect/
-Copyright (c) Script Tutorials. All rights reserved.
-This stylesheet and the associated (x)html may be modified in any way to fit your requirements.
-================================================================================================= */
-
-/* general styles */
-html, body {
-    height: 100%;
-    width: 100%;
-}
-
-/* padded section */
-.pad-section {
-    padding: 50px 0;
-}
-.pad-section img {
-    width: 100%;
-}
-
-/* vertical-centered text */
-.text-vcenter {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
-.text-vcenter h1 {
-    font-size: 4.5em;
-    font-weight: 700;
+body {
     margin: 0;
-    padding: 0;
+}
+.horizontal-felxbox {
+    display: flex;
+    justify-content: space-around;
 }
 
-/* additional sections */
-#home {
-    background: url(../images/home.jpg) no-repeat center center fixed;
-    display: table;
-    height: 100%;
-    position: relative;
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.vertical-flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#about {
-}
-
-#projects, #academic, #achievement {
-    background-color: #306d9f;
-    color: #ffffff;
-}
-#projects .glyphicon {
-    border: 2px solid #FFFFFF;
-    border-radius: 50%;
-    display: inline-block;
-    font-size: 60px;
-    height: 140px;
-    line-height: 140px;
-    text-align: center;
-    vertical-align: middle;
-    width: 140px;
-}
-
-#software {
-    background: url(../images/estate.jpg) no-repeat center center fixed;
-    display: table;
-    height: 800px;
-    position: relative;
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-#software .panel {
-    opacity: 0.85;
-}
-
-footer {
-    padding: 20px 0;
-}
-footer .glyphicon {
-    color: #333333;
-    font-size: 60px;
-}
-footer .glyphicon:hover {
-    color: #306d9f;
-}
-
- /* The Modal (background) */
- .modal {
-     display: none; /* Hidden by default */
-     position: fixed; /* Stay in place */
-     z-index: 1; /* Sit on top */
-     padding-top: 100px; /* Location of the box */
-     left: 0;
-     top: 0;
-     width: 100%; /* Full width */
-     height: 100%; /* Full height */
-     overflow: auto; /* Enable scroll if needed */
-     background-color: rgb(0,0,0); /* Fallback color */
-     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
- }
-
-/* Modal Content */
-.modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
-}
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-}
-
-/* The Close Button */
-.close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.modal-header {
-    padding: 2px 16px;
-    background-color: #0273D4;
-    color: white;
-}
-
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #0273D4;
-    color: white;
-}
-
-
-#slider {
-    background: -webkit-gradient(linear,left top,right top,
-    color-stop(0, #4d4d4d),
-    color-stop(0.4, #4d4d4d),
-    color-stop(0.5, white),
-    color-stop(0.6, #4d4d4d),
-    color-stop(1, #4d4d4d));
-
-    -webkit-background-clip: text;
-
-    -moz-text-fill-color: transparent;
-    -webkit-text-fill-color: transparent;
-
-    -webkit-animation: slidetounlock 5s infinite;
-
-    font-size: 50px;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: bold;
-
-
-    -webkit-text-size-adjust: none;
-}
-
-@-webkit-keyframes slidetounlock {
-    0% {
-        background-position: -300px 0;
-    }
-    100%{
-        background-position: 300px 0;
-    }
-}
-
-.huge-chartbox {
-    display: -ms-inline-flexbox;
-    display: -webkit-inline-flexbox;
-    display: inline-flex;
-    margin-bottom: 64px;
-}
-.huge-chartbox div[chart-type*="donut"] {
-    width: 160px;
-    height: 160px;
-    display: block;
-    position: relative;
-    margin-right: 115px;
-}
-.huge-chartbox div[chart-type*="donut"]:last-of-type {
-    margin-right: 0;
-}
-.huge-chartbox div.donut-hole {
-    height: 96px;
-    width: 96px;
-    background-color: #fff;
-    z-index: 20;
-    position: absolute;
-    top: 32px;
-    left: 32px;
-    border-radius: 96px;
-    line-height: 40px;
-}
-.huge-chartbox span.donut-filling {
-    position: absolute;
-    display: block;
-    vertical-align: middle;
-    font-family: "Open Sans";
-    font-weight: 300;
-    color: #616161;
-    font-size: 39.1104px;
-    top: 50%;
-    margin-top: -20px;
-    width: 96px;
-    height: 40px;
-    text-align: center;
-    cursor: default;
-    overflow: none;
-}
-.huge-chartbox div.donut-caption-wrapper {
-    width: 160px;
-    align-content: center;
-    position: relative;
-    top: 195.55555556px;
-}
-.huge-chartbox span.donut-caption {
-    display: block;
-    text-align: center;
-    font-family: "Open Sans";
-    color: #616161;
-    font-size: 15.40740741px;
-    font-weight: 600;
-    cursor: default;
+.top-nav {
+    background-color: slategrey;
+    font-size: 20px;
+    padding: 10px;
     margin: 0 auto;
-}
-.huge-chartbox .donut-bite {
-    position: absolute;
-    width: 80px;
-    height: 160px;
-    overflow: hidden;
-    top: 0;
-    left: 80.5px;
-    -moz-transform-origin: left center;
-    -ms-transform-origin: left center;
-    -o-transform-origin: left center;
-    -webkit-transform-origin: left center;
-    transform-origin: left center;
-}
-.huge-chartbox .donut-bite.large {
-    width: 160px;
-    height: 160px;
-    left: 0;
-    -moz-transform-origin: center center;
-    -ms-transform-origin: center center;
-    -o-transform-origin: center center;
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-}
-.huge-chartbox .donut-bite:BEFORE {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 160px;
-    top: 0;
-    left: -80px;
-    border-radius: 80px 0 0 80px;
-    -moz-transform-origin: right center;
-    -ms-transform-origin: right center;
-    -o-transform-origin: right center;
-    -webkit-transform-origin: right center;
-    transform-origin: right center;
-}
-.huge-chartbox .donut-bite.large:BEFORE {
-    left: 0;
-}
-.huge-chartbox .donut-bite.large:AFTER {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 160px;
-    left: 80px;
-    border-radius: 0 80px 80px 0;
+    border: 1px solid black;
 }
 
-.panel {
-    width: 170px; !important;
+.menu:hover {
+    color: #EEE8AA;
 }
 
-.panel-heading{
+.page1{
+    height: 100vh; /* For 100% screen height */
+    width:  100vw; /* For 100% screen width */
+    background-color: #EEE8AA;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center;
+}
+
+.name {
+    font-size: 40px;
+}
+
+.position {
+    font-size: 25px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 25px;
+    border: solid 1px;
+    background-color: slategrey;
+}
+
+.button:hover {
+    color: #EEE8AA;
+}
+
+
+.vertical-flexbox>.vertical-flexbox>div {
+    width: 100vh;
     text-align: center;
+    padding: 20px 0;
 }
