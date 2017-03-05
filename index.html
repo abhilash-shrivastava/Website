@@ -6,30 +6,30 @@
     <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
-<nav class="horizontal-felxbox top-nav">
+<nav class="horizontal-flexbox top-nav">
     <div></div>
-    <div class="menu">
-        Home
+    <div>
+        <a class="menu" href="#home">Home</a>
     </div>
-    <div class="menu">
-        About
+    <div>
+        <a class="menu" href="#about">About</a>
     </div>
-    <div class="menu">
-        Work
+    <div>
+        <a class="menu" href="#work">Work</a>
     </div>
-    <div class="menu">
-        Projects
+    <div>
+        <a class="menu" href="#projects">Projects</a>
     </div>
-    <div class="menu">
-        Contact
+    <div>
+        <a class="menu" href="#home">Contact</a>
     </div>
-    <div class="menu">
-        Resume
+    <div>
+        <a class="menu" href="#home">Resume</a>
     </div>
     <div></div>
 </nav>
-<div class="vertical-flexbox">
-    <div class="page1 vertical-flexbox">
+<div class="vertical-flexbox font-style">
+    <div id="home" class="page page1 vertical-flexbox">
         <div class="image-container vertical-div">
             <img src="https://media.giphy.com/media/L8K62iTDkzGX6/source.gif">
         </div>
@@ -39,9 +39,183 @@
         <div class="position">
             <span>SOFTWARE ENGINEER</span>
         </div>
-        <div class="horizontal-felxbox">
-            <div class="button"><span>RESUME</span></div>
-            <div class="button"><span>WORK</span></div>
+        <div class="horizontal-flexbox">
+            <div class="button"><a>RESUME</a></div>
+            <div class="button"><a>WORK</a></div>
+        </div>
+    </div>
+    <div id="about" class="page page2 vertical-flexbox">
+        <div class="horizontal-flexbox">
+            <div class="about-me"><span>About Me</span><hr>
+            </div>
+        </div>
+        <div class="horizontal-flexbox">
+            <div class="vertical-flexbox flex-one">
+                <div>
+                    <p>
+                        I am an Indian Software Developer located in San Francisco. My interest is Web Development and all things Javascript.
+                    </p>
+                </div>
+                <div>
+                    <p><b>Interests and Skills</b></p>
+                    <ul>
+                        <li>Software Engineering</li>
+                        <li>Front-End Web Development</li>
+                        <li>Cloud Computing</li>
+                        <li>Microservices & REST API's</li>
+                        <li>Software Architecture</li>
+                        <li>Developer Tooling</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="vertical-flexbox flex-one text-div education-work">
+                <div class="horizontal-flexbox flex-one">
+                    <div>
+                        <img class="logo" src="images/students-cap_318-62709.png">
+                    </div>
+                    <div class="vertical-flexbox text-div">
+                        <div class="flex-one text-box">
+                            <b>Computer Science, Master's - 2017</b>
+                            <p>San Francisco State University</p>
+                        </div>
+                        <div class="flex-one text-box">
+                            <b>Computer Science, Bachelor's - 2011</b>
+                            <p>Rajiv Gandhi Technical University</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-flexbox flex-one">
+                    <div>
+                        <img class="logo" src="https://static.storied.co/K1dENv5ld5XBGLDZ/projects/QjBEzPLeJY2pG497/assets/images/dbcda3a2a371604ff3ee109931e2954a_extra_large.webp">
+                    </div>
+                    <div class="vertical-flexbox text-div">
+                        <div class="flex-one text-box">
+                            <b>Software Engineer - Storied</b>
+                            <p>Created a Javascript framework for digital publishing on top of AngularJS.</p>
+                        </div>
+                        <div class="flex-one text-box">
+                            <b>Operation Engineer - Tata Consultancy Services</b>
+                            <p>Operation management for the telecommunication Client VODAFONE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="work" class="page3 vertical-flexbox font-style">
+        <div>
+            <img src="https://static.storied.co/R0MgwXPJXxv3mq7a/projects/QjBEzPLeJY2pG497/assets/images/b8381cc3ac345ac0ef541aceb8a96476_extra_large.webp">
+        </div>
+        <div>
+            <p>
+                Storied is a software service that allows publishers and creatives to create, publish, monetize and distribute interactive digital experiences without writing any code, at the fraction of the cost.
+            </p>
+        </div>
+        <div>
+            <p>
+                I built N2, the Javascript framework that powers Storied's runtime. I also created an ElasticSearch backed analytics service that can handle millions of events and managed the companies' AWS Cloud infrastructure & operations.
+            </p>
+        </div>
+        <div>
+            <b>SELECTED PROJECTS</b>
+        </div>
+        <div class="horizontal-flexbox flex-one">
+            <div class="vertical-flexbox flex-one">
+                <div class="text-box padding">
+                    <a target="_blank" href="https://www.cnet.com/special-reports/blizzard-25/">
+                        <img class="grayscale" height="200px" src="https://static.storied.co/K1dENv5ld5XBGLDZ/projects/QjBEzPLeJY2pG497/assets/images/6aa1710ccc9f7821d475f8a8e8050530.n2optimized.jpg">
+                        <br>
+                        Blizzard @ 25
+                        <br>
+                        CNET
+                    </a>
+                </div>
+                <div class="text-box padding">
+                    <a target="_blank" href="https://www.cnet.com/special-reports/blizzard-25/">
+                        <img class="grayscale" height="200px" src="https://static.storied.co/R0MgwXPJXxv3mq7a/projects/QjBEzPLeJY2pG497/assets/images/a7a738df63b601bb888e7b0ebdc2aa22.n2optimized.jpg">
+                        <br>
+                        Locked & Loaded
+                        <br>
+                        The Hollywood Reporter
+                    </a>
+                </div>
+            </div>
+            <div class="vertical-flexbox flex-one">
+                <div class="text-box padding">
+                    <a target="_blank" href="https://www.cnet.com/special-reports/blizzard-25/">
+                        <img class="grayscale" width="100%" height="200px" src="https://static.storied.co/R0MgwXPJXxv3mq7a/projects/QjBEzPLeJY2pG497/assets/images/f7e2f3197ffbe8240d2bcce9c0c9e8d4.n2optimized.jpg">
+                        <br>
+                        Life VR
+                        <br>
+                        Time Magazine
+                    </a>
+                </div>
+                <div class="text-box padding">
+                    <a target="_blank" href="https://www.cnet.com/special-reports/blizzard-25/">
+                        <img class="grayscale" height="200px" src="https://static.storied.co/R0MgwXPJXxv3mq7a/projects/QjBEzPLeJY2pG497/assets/images/d420d148daf36e906cdbe0f9354a8195.n2optimized.jpg">
+                        <br>
+                        Creative Vision
+                        <br>
+                        Sandbox Studios
+                    </a>
+                </div>
+            </div>
+            <div class="vertical-flexbox flex-one">
+                <div class="text-box padding">
+                    <a target="_blank" href="https://www.cnet.com/special-reports/blizzard-25/">
+                        <img class="grayscale" height="200px" src="https://static.storied.co/R0MgwXPJXxv3mq7a/projects/QjBEzPLeJY2pG497/assets/images/e4c5d3419740c1775bec914d687cf2d9.n2optimized.jpg">
+                        <br>
+                        Biographic
+                        <br>
+                        California Academy of Sciences
+                    </a>
+                </div>
+                <div class="text-box padding">
+                    <a target="_blank" href="https://www.cnet.com/special-reports/blizzard-25/">
+                        <img class="grayscale" height="200px" src="https://static.storied.co/K1dENv5ld5XBGLDZ/projects/QjBEzPLeJY2pG497/assets/images/7d0588cabc2a6ebb822fc1f37e384c75.n2optimized.jpg">
+                        <br>
+                        A supercar with supercapacitors
+                        <br>
+                        CNET
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page4 vertical-flexbox font-style">
+        <div>
+            <img src="images/download.jpeg">
+        </div>
+        <div>
+            <p>
+                Tata Consultancy Services Limited is an Indian multinational information technology service, consulting and business solutions company.
+            </p>
+        </div>
+        <div>
+            <p>
+                I was operational lead and manging the production support operation for the client VODAFONE, the second largest telecommunication service provider in India
+            </p>
+        </div>
+    </div>
+    <div id="projects" class="page page5 vertical-flexbox font-style">
+        <div class="horizontal-flexbox">
+            <div class="about-me"><span>Projects</span><hr>
+            </div>
+        </div>
+        <div class="horizontal-flexbox text-div">
+            <div class="vertical-flexbox text-div flex-one">
+                <b>IoT-Driven Watering to Fight Droughts</b>
+                <div class="text-box">
+                    <p>Tech talk at the Predix Silicon Valley hosted by Pivotal. I talked about a use case of solving the dorught problem in california region with the help of IoT. This talk also gives the brief overview of GE Predix platform.</p>
+                </div>
+            </div>
+            <div class="flex-one">
+                <video class="video" src="https://embedwistia-a.akamaihd.net/deliveries/b9cacedc22601f1e0befb7c06ed07b3a867ad66d/file.mp4" controls poster="https://www.altoros.com/blog/wp-content/uploads/2016/10/GE-predix-smart-watering-system-feature.gif">
+                    Sorry, your browser doesn't support embedded videos,
+                    but don't worry, you can <a href="https://embedwistia-a.akamaihd.net/deliveries/b9cacedc22601f1e0befb7c06ed07b3a867ad66d/file.mp4">download it</a>
+                    and watch it with your favorite video player!
+                </video>
+            </div>
         </div>
     </div>
 </div>
